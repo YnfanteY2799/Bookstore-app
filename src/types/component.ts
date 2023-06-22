@@ -9,3 +9,7 @@ export interface GWrapperProps {
 export interface GProps {
   theme?: T_Theme;
 }
+
+export interface NavbarProps extends GProps {
+  isLogged?: boolean;
+}

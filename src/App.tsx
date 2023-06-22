@@ -6,11 +6,10 @@ import { routes } from "@/routes";
 import type { ReactElement } from "react";
 
 export default function App(): ReactElement {
-  // Create a client
-  const queryClient = new QueryClient();
-
-  // Hook Router
+  
+  // Hooks && Router
   const router = createBrowserRouter(routes);
+  const queryClient = new QueryClient();
 
   return (
     <QueryClientProvider client={queryClient}>
