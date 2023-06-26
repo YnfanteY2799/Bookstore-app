@@ -73,9 +73,10 @@ export default function Navbar({ theme, isLogged }: NavbarProps): ReactElement {
             </div>
           </>
         ) : (
-          <>
+          <div className="flex gap-2">
             <Link to={"/Login"} className="btn">Login</Link>
-          </>
+            <Link to={"/Login"} className="btn">Login</Link>
+          </div>
         )}
       </div>
     </div>
