@@ -12,7 +12,7 @@ export default function Navbar({ theme, isLogged }: NavbarProps): ReactElement {
         </Link>
       </div>
       <div className="flex-none">
-        {isLogged ? (
+        {!isLogged ? (
           <>
             <div className="dropdown dropdown-end">
               <label tabIndex={0} className="btn btn-ghost btn-circle">
